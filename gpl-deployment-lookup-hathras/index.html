@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📻 GPL Deployment Lookup — Hathras</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>📻 GPL Deployment Lookup</h1>
+    <p class="subtitle">Hathras — Set Number, ANI Number या थाना/जगह के नाम से खोजें</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="stats">
+    <div class="stat"><b id="entriesStat">0</b><span>Deployment Entries</span></div>
+    <div class="stat"><b id="codesStat">0</b><span>Set/Equipment Codes</span></div>
+    <div class="stat"><b id="matchesStat">0</b><span>Current Matches</span></div>
+  </section>
+
+  <section class="search-panel">
+    <div class="modes">
+      <button class="mode active" data-mode="set">🔢 Set Number</button>
+      <button class="mode" data-mode="ani">📞 ANI Number</button>
+      <button class="mode" data-mode="place">📍 जगह / थाना</button>
+      <button class="mode" data-mode="all">🔎 सभी</button>
+    </div>
+    <div class="search-row">
+      <input id="search" type="search" autocomplete="off" spellcheck="false"
+             placeholder="उदाहरण: C4110644" aria-label="Search">
+      <button class="clear" id="clearBtn">Clear</button>
+    </div>
+    <div class="hint" id="hint">Exact और partial Set Number / Equipment Code search</div>
+  </section>
+
+  <div class="results-head">
+    <h2>Deployment Results</h2>
+    <div class="count" id="countText">0 matches</div>
+  </div>
+  <section id="results"></section>
+</main>
+<footer>Offline HTML Prototype • Data embedded in local project files • Internet required नहीं</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
